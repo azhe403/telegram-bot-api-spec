@@ -51,7 +51,7 @@ jobs:
           run: chmod +x ./../to-repo-data && ./../to-repo-data --source=source.html
 
         - name: Upload artifact
-          uses: actions/upload-artifact@v3
+          uses: actions/upload-artifact@v5
           if: failure()
           with:
             name: source
